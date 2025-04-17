@@ -1,6 +1,7 @@
 package pratica.atividade.pontos_de_coleta.entities;
 
 import java.util.List;
+import java.util.ArrayList;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -30,8 +31,15 @@ public class MateriaisPonto {
 
     @OneToMany
     @JoinColumn(name = "id_lixo")
-    private List<LixoEletronico> lixoEletronico;
+    private List<LixoEletronico> lixoEletronico = new ArrayList<>();
 
     private int capMaxima; 
+
+    public boolean excessivo(){
+        if(capMaxima > lixoEletronico.size()){
+            return true;
+        }
+        return false;
+    }
 
 }
