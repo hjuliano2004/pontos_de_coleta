@@ -1,0 +1,15 @@
+# Arquivos de build
+/target/
+/build/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Configurações do IDE
+/.vscode/
+/.idea/
+*.iml
