@@ -1,0 +1,14 @@
+pratica\atividade\pontos_de_coleta\services\LixoServiceImpl.class
+pratica\atividade\pontos_de_coleta\controlers\LixoControler.class
+pratica\atividade\pontos_de_coleta\entities\MateriaisPonto.class
+pratica\atividade\pontos_de_coleta\mappers\LixoMapper.class
+pratica\atividade\pontos_de_coleta\PontosDeColetaApplication.class
+pratica\atividade\pontos_de_coleta\dtos\LixoRequestDto.class
+pratica\atividade\pontos_de_coleta\services\LixoService.class
+pratica\atividade\pontos_de_coleta\dtos\LixoResponseDto.class
+pratica\atividade\pontos_de_coleta\entities\LixoEletronico.class
+pratica\atividade\pontos_de_coleta\dtos\errors\ErrorResponseDto.class
+pratica\atividade\pontos_de_coleta\errors\exceptions\NotFoundException.class
+pratica\atividade\pontos_de_coleta\entities\Ponto.class
+pratica\atividade\pontos_de_coleta\repositories\LixoRepository.class
+pratica\atividade\pontos_de_coleta\errors\GlobalAdvice.class

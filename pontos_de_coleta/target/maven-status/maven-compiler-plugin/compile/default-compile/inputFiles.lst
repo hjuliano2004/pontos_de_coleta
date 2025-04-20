@@ -1,0 +1,16 @@
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\controlers\LixoControler.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\dtos\errors\ErrorResponseDto.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\dtos\LixoRequestDto.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\dtos\LixoResponseDto.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\entities\LixoEletronico.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\entities\MateriaisPonto.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\entities\Ponto.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\errors\exceptions\BadRequestException.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\errors\exceptions\LixoNotFoundException.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\errors\exceptions\NotFoundException.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\errors\GlobalAdvice.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\mappers\LixoMapper.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\PontosDeColetaApplication.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\repositories\LixoRepository.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\services\LixoService.java
+C:\Users\ninja\Desktop\LAB 365\pontos_de_coleta\pontos_de_coleta\pontos_de_coleta\src\main\java\pratica\atividade\pontos_de_coleta\services\LixoServiceImpl.java
