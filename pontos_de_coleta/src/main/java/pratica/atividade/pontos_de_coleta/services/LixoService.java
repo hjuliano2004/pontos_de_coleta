@@ -12,7 +12,9 @@ public interface LixoService {
 
     public List<LixoResponseDto> getAll();
 
-    public LixoResponseDto findById(Long id);
+    public LixoEletronico findById(Long id);
+
+    public LixoResponseDto getById(Long id);
 
     public LixoResponseDto create(LixoRequestDto dto);
 

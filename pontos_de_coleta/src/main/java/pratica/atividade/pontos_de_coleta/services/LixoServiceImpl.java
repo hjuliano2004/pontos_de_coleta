@@ -10,7 +10,7 @@ import pratica.atividade.pontos_de_coleta.dtos.LixoRequestDto;
 import pratica.atividade.pontos_de_coleta.dtos.LixoResponseDto;
 import pratica.atividade.pontos_de_coleta.entities.LixoEletronico;
 import pratica.atividade.pontos_de_coleta.errors.exceptions.BadRequestException;
-import pratica.atividade.pontos_de_coleta.errors.exceptions.LixoNotFoundException;
+import pratica.atividade.pontos_de_coleta.errors.exceptions.FlexNotFoundException;
 import pratica.atividade.pontos_de_coleta.mappers.LixoMapper;
 import pratica.atividade.pontos_de_coleta.repositories.LixoRepository;
 
@@ -38,10 +38,17 @@ public class LixoServiceImpl implements LixoService{
     }
 
     @Override
-    public LixoResponseDto findById(Long id){
+    public LixoEletronico findById(Long id){
     LixoEletronico lixo = repository.findById(id).orElseThrow(() ->
-     new LixoNotFoundException("registron com id " + id + " não existe"));
-    return LixoMapper.toDto(lixo);
+     new FlexNotFoundException("registron com id " + id + " não existe"));
+    return lixo;
+    }
+
+    @Override
+    public LixoResponseDto getById(Long id){
+        LixoEletronico lixo = this.findById(id);
+
+        return LixoMapper.toDto(lixo);
     }
 
 
@@ -61,7 +68,7 @@ public class LixoServiceImpl implements LixoService{
     @Override
     public void delete(Long id){
        if(!repository.existsById(id)){
-        throw new LixoNotFoundException("registron com id " + id + " não deletado ou não existe");
+        throw new FlexNotFoundException("registron com id " + id + " não deletado ou não existe");
     }
     repository.deleteById(id);
 }
@@ -71,7 +78,7 @@ public class LixoServiceImpl implements LixoService{
         validateDto(dto);
         
         LixoEletronico lixo = repository.findById(id).orElseThrow(()
-        -> new LixoNotFoundException("item " + id + " não encontrado"));
+        -> new FlexNotFoundException("item " + id + " não encontrado"));
             lixo.setDescricao(dto.descricao());
             lixo.setTipo(dto.tipo());
             lixo = repository.save(lixo);

@@ -32,7 +32,7 @@ public class LixoControler {
 
     @GetMapping("{id}")
     public LixoResponseDto getById(@PathVariable Long id) {
-        return service.findById(id);
+        return service.getById(id);
     }
 
     @PostMapping

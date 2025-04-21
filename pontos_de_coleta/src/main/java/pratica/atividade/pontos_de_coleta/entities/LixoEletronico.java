@@ -20,7 +20,7 @@ public class LixoEletronico {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "tipo")
     private String tipo;
 
     private String descricao; 

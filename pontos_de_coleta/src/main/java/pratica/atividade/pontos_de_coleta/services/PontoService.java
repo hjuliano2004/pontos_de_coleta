@@ -8,9 +8,9 @@ import pratica.atividade.pontos_de_coleta.entities.Ponto;
 
 public interface PontoService {
     
-    public List<Ponto> findAll();
+    public List<Ponto> findAll(String search);
 
-    public List<PontoResponseDto> getAll();
+    public List<PontoResponseDto> getAll(String search);
 
     public Ponto findById(Long id);
 

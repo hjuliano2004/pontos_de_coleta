@@ -22,19 +22,31 @@ public class PontoServiceImpl implements PontoService{
     private final LixoService lixoService;
 
     @Override
-    public List<Ponto> findAll() {
-        List<Ponto> pontos = repository.findAll();
+    public List<Ponto> findAll(String search) {
+        List<Ponto> pontos;
 
-        if(pontos.isEmpty()){
+        if(search == null || search.isEmpty()){
+            pontos = repository.findAll();
+        }else{
+            pontos = repository.findByLixoEletronicoGetTipo(search);
+        }
+
+        List<Ponto> list = new ArrayList<>();
+
+        for(Ponto ponto : pontos){
+            list.add(ponto);
+        }
+
+        if(list.isEmpty() || list == null){
             throw new FlexNotFoundException("nenhum ponto de coleta foi cadastrado");
         }
 
-    return pontos;
+    return list;
     }
 
     @Override
-    public List<PontoResponseDto> getAll() {
-        List<Ponto> pontos = this.findAll();
+    public List<PontoResponseDto> getAll(String search) {
+        List<Ponto> pontos = this.findAll(search);
         List<PontoResponseDto> list = new ArrayList<>();
          for(Ponto ponto : pontos){
             list.add(PontoMapper.toDto(ponto));
